@@ -1,5 +1,10 @@
 package homework05;
 
+import homework05.Animal.Animal;
+import homework05.Animal.Cat;
+import homework05.Animal.Dog;
+import homework05.Animal.Horse;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,6 +18,7 @@ public class Main {
 
         System.out.println(cat1.run(50));
         System.out.println(cat1.run(30));
+        System.out.println(cat1.swim(10));
 
         System.out.println(horse1.swim(10));
 

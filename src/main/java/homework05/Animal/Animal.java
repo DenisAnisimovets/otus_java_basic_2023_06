@@ -1,4 +1,4 @@
-package homework05;
+package homework05.Animal;
 
 public abstract class Animal {
     String name;
@@ -6,7 +6,7 @@ public abstract class Animal {
     int speedSwim;
     int stamina;
     final int needStaminaRun = 1;
-    int needStaminaSwim = 0;
+    int needStaminaSwim = 1000;
 
     public int getStamina() {
         return stamina;

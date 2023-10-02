@@ -1,4 +1,4 @@
-package homework05;
+package homework05.Animal;
 
 public class Dog extends Animal {
 
