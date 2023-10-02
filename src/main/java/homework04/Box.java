@@ -10,15 +10,15 @@ public class Box {
     public void throwOutObject() {
         if (isOpen && !isEmptyBox()) {
             this.item = null;
-            System.out.println("throw object from box");
-        } else System.out.println("Box is closed or box is empty");
+            System.out.println("Throw object from box");
+        } else System.out.println("The box is closed or box is empty");
     }
 
     public void putObject(String object) {
         if (isEmptyBox()) {
             this.item = object;
             System.out.println("Put object in box");
-        } else System.out.println("Thx box is closed");
+        } else System.out.println("The box is closed");
 
     }
 
@@ -31,18 +31,18 @@ public class Box {
     }
 
     /* Constructor with set isOpen */
-    public Box(int width, int hight, String colour, boolean isOpen, String item) {
+    public Box(int width, int height, String colour, boolean isOpen, String item) {
         this.width = width;
-        this.height = hight;
+        this.height = height;
         this.colour = colour;
         this.isOpen = isOpen;
         this.item = item;
     }
 
     /* Constructor with default isOpen - false */
-    public Box(int weith, int hight, String colour, String item) {
-        this.width = weith;
-        this.height = hight;
+    public Box(int weight, int height, String colour, String item) {
+        this.width = weight;
+        this.height = height;
         this.colour = colour;
         this.isOpen = false;
         this.item = item;
