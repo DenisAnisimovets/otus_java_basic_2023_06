@@ -8,7 +8,7 @@ public class Box {
     private String item;
 
     public void throwOutObject() {
-        if (isOpen && isEmptyBox()) {
+        if (isOpen && !isEmptyBox()) {
             this.item = null;
             System.out.println("throw object from box");
         } else System.out.println("Box is closed or box is empty");
