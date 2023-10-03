@@ -15,9 +15,9 @@ public class MyList {
     public static int getSumArrayMoreFive(List<Integer> list) {
         int sum = 0;
 
-        for (Integer i : list) {
-            if (i > 5) {
-                sum += i;
+        for (Integer v : list) {
+            if (v > 5) {
+                sum += v;
             }
         }
 

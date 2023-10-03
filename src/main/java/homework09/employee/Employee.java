@@ -1,8 +1,8 @@
 package homework09.employee;
 
 public class Employee implements Comparable<Employee> {
-    String name;
-    int age;
+    private String name;
+    private int age;
 
     public Employee(String name, int age) {
         this.name = name;

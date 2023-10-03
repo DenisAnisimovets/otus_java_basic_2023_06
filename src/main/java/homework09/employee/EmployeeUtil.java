@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeUtil {
-    List<String> getListName(ArrayList<Employee> list) {
+    List<String> getListName(List<Employee> list) {
         List<String> listName = new ArrayList<>();
         for (Employee employee : list) {
             listName.add(employee.getName());
@@ -12,15 +12,15 @@ public class EmployeeUtil {
         return listName;
     }
 
-    boolean getMiddleAge(ArrayList<Employee> list, int age) {
-        int middleAge = 0;
+    boolean getMiddleAge(List<Employee> list, int middleAge) {
+        int totalAge = 0;
         for (Employee employee : list) {
-            middleAge += employee.getAge();
+            totalAge += employee.getAge();
         }
-        return middleAge > list.size() * age;
+        return totalAge > list.size() * middleAge;
     }
 
-    List<Employee> getListByAge(ArrayList<Employee> list, int age) {
+    List<Employee> getListByAge(List<Employee> list, int age) {
         List<Employee> listEmployee = new ArrayList<>();
         for (Employee employee : list) {
             if (employee.getAge() >= age) {
@@ -30,7 +30,7 @@ public class EmployeeUtil {
         return listEmployee;
     }
 
-    Employee getYoungestEmployee(ArrayList<Employee> list) {
+    Employee getYoungestEmployee(List<Employee> list) {
         Employee youngestEmployee = list.get(0);
         for (Employee employee : list) {
             if(employee.getAge() < youngestEmployee.getAge()) {
