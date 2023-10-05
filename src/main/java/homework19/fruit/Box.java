@@ -8,7 +8,7 @@ public class Box<T extends Fruit> implements Comparable<Box> {
     private List<T> list = new ArrayList<>();
 
     public int getBoxWeight() {
-        return list.stream().map(Fruit::getWeight).mapToInt(x -> x).sum();
+        return list.stream().mapToInt(Fruit::getWeight).sum();
     }
 
     public void add(T fruit) {
@@ -21,10 +21,12 @@ public class Box<T extends Fruit> implements Comparable<Box> {
     }
 
     public void moveToOtherBox(Box<T> box) {
-        for (T t : list) {
-            box.add(t);
+        if(!(box == null)) {
+            for (T t : list) {
+                box.add(t);
+            }
+            list.clear();
         }
-        list.clear();
     }
 
     @Override
