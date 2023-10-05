@@ -21,7 +21,7 @@ public class Box<T extends Fruit> implements Comparable<Box> {
     }
 
     public void moveToOtherBox(Box<T> box) {
-        if(!(box == null)) {
+        if((box != null)&&(box != this)) {
             for (T t : list) {
                 box.add(t);
             }
