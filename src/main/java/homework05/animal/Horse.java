@@ -1,4 +1,4 @@
-package homework05.Animal;
+package homework05.animal;
 
 public class Horse extends Animal {
 

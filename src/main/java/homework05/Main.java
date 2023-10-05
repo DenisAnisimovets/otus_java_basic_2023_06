@@ -1,9 +1,9 @@
 package homework05;
 
-import homework05.Animal.Animal;
-import homework05.Animal.Cat;
-import homework05.Animal.Dog;
-import homework05.Animal.Horse;
+import homework05.animal.Animal;
+import homework05.animal.Cat;
+import homework05.animal.Dog;
+import homework05.animal.Horse;
 
 public class Main {
 

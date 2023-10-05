@@ -1,4 +1,4 @@
-package homework05.Animal;
+package homework05.animal;
 
 public abstract class Animal {
     String name;
@@ -22,7 +22,7 @@ public abstract class Animal {
     }
 
     public int run(int distance) {
-        if (getStamina() >= distance * needStaminaRun) {
+        if (stamina >= distance * needStaminaRun) {
             stamina -= distance * needStaminaRun;
             System.out.println(name + " пробежал(а) " + distance + " метров");
             return distance / speedRun;
@@ -33,7 +33,7 @@ public abstract class Animal {
     }
 
     public int swim(int distance) {
-        if (getStamina() > distance * needStaminaSwim) {
+        if (stamina > distance * needStaminaSwim) {
             stamina -= distance * needStaminaSwim;
             System.out.println(name + " проплыл(а) " + distance + " метров");
             return distance / speedRun;
