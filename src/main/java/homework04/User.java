@@ -1,5 +1,6 @@
 package homework04;
 
+import java.time.LocalDate;
 import java.util.Calendar;
 
 public class User {
@@ -7,14 +8,14 @@ public class User {
     private String name;
     private String surname;
     private String patronymic;
-    private Calendar birthdate;
+    private LocalDate birthdate;
     private String email;
 
-    public Calendar getBirthdate() {
+    public LocalDate getBirthdate() {
         return birthdate;
     }
 
-    public User(String name, String surname, String patronymic, Calendar birthdate, String email) {
+    public User(String name, String surname, String patronymic, LocalDate birthdate, String email) {
         this.name = name;
         this.surname = surname;
         this.patronymic = patronymic;
@@ -26,7 +27,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "FIO: '" + name + " " + surname + " " + patronymic + '\'' +
-                ", birthdate: " + birthdate.getTime() +
+                ", birthdate: " + birthdate.toString() +
                 ", email: '" + email + '\'' +
                 '}';
     }
