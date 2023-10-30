@@ -22,15 +22,19 @@ public class ArrayUtil {
     }
 
     public boolean isArrayContainsFrom1and2(int[] array) {
-        boolean isHave1or2 = false;
+        boolean isHave1 = false;
+        boolean isHave2 = false;
         for (int i = 0; i < array.length; i++) {
-            if(array[i] == 1 || array[i] == 2) {
-                isHave1or2 = true;
-            } else {
+            if(array[i] == 1 ) {
+                isHave1 = true;
+            } else if(array[i] == 2) {
+                isHave2 = true;
+            }
+            else {
                 return false;
             }
         }
-        if(isHave1or2) return true;
+        if(isHave1&&isHave2) return true;
         else {
             return false;
         }
