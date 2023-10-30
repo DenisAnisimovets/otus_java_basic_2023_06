@@ -2,7 +2,7 @@ package homework22;
 
 public class ArrayUtil {
 
-    public int[] makeNewArray(int[] oldArray) {
+    public static int[] makeNewArray(int[] oldArray) {
         int last1 = -1;
         for (int i = 0; i < oldArray.length; i++) {
             if(oldArray[i] == 1) {
@@ -21,7 +21,7 @@ public class ArrayUtil {
         return arr;
     }
 
-    public boolean isArrayContainsFrom1and2(int[] array) {
+    public static boolean isArrayContainsFrom1and2(int[] array) {
         boolean isHave1 = false;
         boolean isHave2 = false;
         for (int i = 0; i < array.length; i++) {
